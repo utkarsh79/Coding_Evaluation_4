@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product">
+        <div class="col">
+            <img class="img-one"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXklo9QSjQ-IrDhNioLRFdpyjOQRN3JsTvmQ&usqp=CAU"
+                alt="Canon EOS 60 Camera">
+            <img class="img-two"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBWX_XHzJUY_vdcqK29FWVNQCd6IugZaWmyE3X1E-XmXLRtl3SfrGdAxRuIg-flipo8I&usqp=CAU"
+                alt="">
+            <h1>Canon EOS 60 Camera</h1>
+            <p class="rate">Rs.45000</p>
+
+            <p><button class="button">Place the Order</button></p>
+        </div>
+
+        <div class="col">
+            <img class="img-one" src="https://images-na.ssl-images-amazon.com/images/I/418OIGKq-LL.jpg">
+            <img class="img-two" src="https://m.media-amazon.com/images/I/51QxA-98Q+L._AC_SX522_.jpg" alt="">
+            <h1>Beat Studio 3 Headphones</h1>
+            <p class="rate">Rs.5000</p>
+
+            <p><button class="button">Place the Order</button></p>
+        </div>
+
+        <input type="text" name="text1" style="width: 300px;
+    height: 100px;">
+        <input type="button" value="Validate Coupon" name="Submit"
+            onclick="validate(document.getElementsByName('text1')[0].value)" style="width: 316px;
+    height: 106px;">
+</body>
+
+</html>
+<script>
+    function validate(Coupon) {
+        codes = new Object();
+        codes.Masai30 = 30;
+
+        if (codes[Coupon]) {
+            window.alert("Coupon Code Successfully Aplied")
+        } else {
+            window.alert("Sorry, The Coupon code is Invalid!")
+        }
+    }
+
+</script>

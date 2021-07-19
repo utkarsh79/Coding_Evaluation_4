@@ -1,0 +1,53 @@
+.product {
+    margin: auto;
+    text-align: center;
+    max-width: 250px;
+    max-height: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+   
+    margin-left: 10px;
+}
+.rate{
+    color: gray;
+    font-size: 25px;
+}
+.button{
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(39, 159, 214);
+    color: white;
+    padding: 10px;    
+}
+.button:hover{
+    opacity: 0.6;
+}
+
+.col .img-two {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    max-width: 250px;
+    max-height: 250px;
+}
+.col:hover .img-two{
+    display: inline;
+}
+
+.product{
+    display: flex;
+}
+.col{
+    flex: 33%;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+.img-one{
+    max-width: 250px;
+    max-height: 250px;
+}
